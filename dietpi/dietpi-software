@@ -13493,7 +13493,7 @@ _EOF_
 
 			fi
 			[[ -d '/etc/systemd/system/motioneye.service.d' ]] && G_EXEC rm -R /etc/systemd/system/motioneye.service.d
-			command -v pip3 > /dev/null && G_EXEC_NOEXIT=1 G_EXEC pip3 uninstall -y motioneye
+			command -v pip3 > /dev/null && G_EXEC_OUTPUT=1 G_EXEC pip3 uninstall -y motioneye
 			G_AGP motion
 			[[ -d '/etc/motioneye' ]] && G_EXEC rm -R /etc/motioneye
 
